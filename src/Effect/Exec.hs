@@ -6,6 +6,7 @@ module Effect.Exec
   , execThrow
   , Command(..)
   , AllowErr(..)
+  , CmdFailure(..)
 
   , execInputParser
   , execInputJson
