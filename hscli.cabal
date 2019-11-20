@@ -105,6 +105,8 @@ library
     Strategy.Go.Transitive
     Strategy.Go.Types
     Strategy.Gradle
+    Strategy.Maven
+    Strategy.Maven.Plugin
     Strategy.Node.YarnLock
     Strategy.NpmList
     Strategy.Python.PipList

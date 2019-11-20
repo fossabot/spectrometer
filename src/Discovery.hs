@@ -8,6 +8,7 @@ import qualified Strategy.Go.Gomod as Gomod
 import qualified Strategy.Go.GopkgLock as GopkgLock
 import qualified Strategy.Go.GopkgToml as GopkgToml
 import qualified Strategy.Gradle as Gradle
+import qualified Strategy.Maven as Maven
 import qualified Strategy.NpmList as NpmList
 import qualified Strategy.Node.YarnLock as YarnLock
 import qualified Strategy.Python.Pipenv as Pipenv
@@ -28,6 +29,8 @@ discoverFuncs =
 
   , Gradle.discover
 
+  , Maven.discover
+
   , NpmList.discover
   , YarnLock.discover
 
@@ -45,6 +48,9 @@ strategyGroups :: [StrategyGroup]
 strategyGroups =
   [ StrategyGroup "gradle"
       [ SomeStrategy Gradle.strategy
+      ]
+  , StrategyGroup "maven"
+      [ SomeStrategy Maven.strategy
       ]
   , StrategyGroup "nodejs"
       [ SomeStrategy YarnLock.strategy
