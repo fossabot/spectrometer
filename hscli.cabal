@@ -72,6 +72,7 @@ common deps
     , typed-process                ^>=0.2.6
     , unordered-containers         ^>=0.2.10
     , vector                       ^>=0.12.0.3
+    , xml                          ^>=1.3.14
     , yaml                         ^>=0.11.1
     , yarn-lock                    ^>=0.6.1
 
@@ -86,6 +87,7 @@ library
     App.Scan.Project
     App.Scan.ProjectInference
     Control.Parallel
+    Data.XML
     Diagnostics
     Discovery
     Discovery.Config
@@ -107,6 +109,7 @@ library
     Strategy.Gradle
     Strategy.Maven
     Strategy.Maven.Plugin
+    Strategy.Maven.Pom
     Strategy.Node.YarnLock
     Strategy.NpmList
     Strategy.Python.PipList
@@ -143,6 +146,7 @@ test-suite test
     Go.GopkgTomlTest
     Gradle.GradleTest
     GraphUtil
+    Maven.MavenTest
     Python.PipListTest
     Python.PipenvTest
     Python.ReqTxtTest
